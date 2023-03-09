@@ -60,7 +60,7 @@ const Ttn = () => {
   });
 
   return (
-    <Root>
+    <Root >
       <Box sx={{ mr: "30px" }}>
         <Box>
           <form onSubmit={formik.handleSubmit}>

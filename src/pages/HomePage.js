@@ -4,8 +4,8 @@ import Container from "@mui/material/Container";
 
 const TTNPage = () => {
   return (
-    <Container>
-      <Box> click on one of buttons</Box>
+    <Container  maxWidth="sm">
+      <Box>Click on one of buttons</Box>
     </Container>
   );
 };
