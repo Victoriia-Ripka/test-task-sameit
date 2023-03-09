@@ -4,12 +4,12 @@ import Navigation from "./Navigation/Navigation";
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <Navigation/>
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-    </div>
+    </>
   );
 };
 
