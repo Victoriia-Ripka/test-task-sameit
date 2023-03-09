@@ -5,14 +5,21 @@ import "./index.css";
 import App from "./components/App";
 import { ThemeProvider } from "@mui/material";
 import reportWebVitals from "./reportWebVitals";
+import { QueryClient, QueryClientProvider } from "react-query";
+// import { store } from "./redux/store.js";
+// import { Provider } from "react-redux";
 import theme from "./theme";
+
+const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter basename="test-task-sameit">
       <ThemeProvider theme={theme}>
-        <App />
+        <QueryClientProvider client={queryClient}>
+          <App />
+        </QueryClientProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
