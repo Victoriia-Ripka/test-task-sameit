@@ -10,7 +10,12 @@ const Navigation = () => {
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Grid container spacing={2}>
-          <Grid item>
+          <Grid
+            item
+            sx={{
+              p: 0,
+            }}
+          >
             <Button
               to="/ttn"
               component={ReactNav}
@@ -22,7 +27,13 @@ const Navigation = () => {
               Перевірити ТТН
             </Button>
           </Grid>
-          <Grid item>
+          <Grid
+            item
+            sx={{
+              p: 0,
+              pl: "16px",
+            }}
+          >
             <Button to="/departments" component={ReactNav} variant="contained">
               Список відділень
             </Button>

@@ -33,8 +33,10 @@ const Ttn = () => {
       </Box>
       <Box
         sx={{
-          width: '100%',
-          height: 300,
+          width: "100%",
+          height: "260px",
+          p: "20px",
+          my: "20px",
           backgroundColor: "secondary.main",
         }}
       >
@@ -44,8 +46,10 @@ const Ttn = () => {
       </Box>
       <Box
         sx={{
-          width: '100%',
-          height: 300,
+          width: "100%",
+          height: "260px",
+          p: "20px",
+          my: "20px",
           backgroundColor: "secondary.main",
         }}
       >
