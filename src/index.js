@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./components/App";
 import { ThemeProvider } from "@mui/material";
 import reportWebVitals from "./reportWebVitals";
+import { ProSidebarProvider } from "react-pro-sidebar";
 import theme from "./theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -12,7 +13,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter basename="test-task-sameit">
       <ThemeProvider theme={theme}>
-        <App />
+        <ProSidebarProvider>
+          <App />
+        </ProSidebarProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
