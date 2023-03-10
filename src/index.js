@@ -8,6 +8,7 @@ import reportWebVitals from "./reportWebVitals";
 import { QueryClient, QueryClientProvider } from "react-query";
 // import { store } from "./redux/store.js";
 // import { Provider } from "react-redux";
+import { ProSidebarProvider } from "react-pro-sidebar";
 import theme from "./theme";
 
 const queryClient = new QueryClient();
@@ -18,7 +19,9 @@ root.render(
     <BrowserRouter basename="test-task-sameit">
       <ThemeProvider theme={theme}>
         <QueryClientProvider client={queryClient}>
-          <App />
+          <ProSidebarProvider>
+            <App />
+          </ProSidebarProvider>
         </QueryClientProvider>
       </ThemeProvider>
     </BrowserRouter>
