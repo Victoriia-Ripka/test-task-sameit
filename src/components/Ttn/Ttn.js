@@ -4,8 +4,6 @@ import { styled } from "@mui/material/styles";
 import * as yup from "yup";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import { useQuery, useMutation, useQueryClient } from "react-query";
-import { getTtns, postTtns } from "../../api/api";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -50,15 +48,7 @@ const RootSidebar = styled("div")(({ theme }) => ({
   },
 }));
 
-const Ttn = () => {
-  const queryClient = useQueryClient();
-  const query = useQuery("ttns", getTtns);
-  const mutation = useMutation(postTtns, {
-    onSuccess: () => {
-      // Invalidate and refetch
-      queryClient.invalidateQueries("ttns");
-    },
-  });
+const Ttn = () => {;
 
   const formik = useFormik({
     initialValues: {
